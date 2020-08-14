@@ -1,11 +1,13 @@
 {
   "expo": {
-    "name": "partyspot",
+    "name": "PartySpot",
+    "description": "Finde alle Events, Partys und Veranstaltungen in deiner Nähe. Nutze dazu deinen Standort oder wähle direkt die Stadt aus.",
     "slug": "partyspot",
+    "backgroundColor": "#f0f0f0",
+    "primaryColor": "#FFCA36",
     "platforms": [
       "ios",
-      "android",
-      "web"
+      "android"
     ],
     "version": "1.0.0",
     "orientation": "portrait",
@@ -13,7 +15,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#f0f0f0"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -22,7 +24,33 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "de.mks-software.partyspot",
+      "buildNumber": "1.0.0",
+      "supportsTablet": true,
+      "requireFullScreen": false,
+      "backgroundColor": "#f0f0f0",
+      "icon": "./assets/ios-icon.png",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "PartySpot benötigt Zugriff auf deinen Standort, um dir Events in der Nähe zu zeigen.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "PartySpot benötigt Zugriff auf deinen Standort, um dir Events in der Nähe zu zeigen."
+      }
+    },
+    "android": {
+      "package": "de.mks_software.partyspot",
+      "versionCode": 1,
+      "backgroundColor": "#f0f0f0",
+      "icon": "./assets/icon.png",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundColor": "#FFCA36"
+      },
+      "permissions": []
+    },
+    "androidStatusBar": {
+      "hidden": false,
+      "translucent": true,
+      "barStyle": "dark-content",
+      "backgroundColor": "#f0f0f0"
     }
   }
 }
